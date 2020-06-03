@@ -18,7 +18,7 @@ FOR I = 0 TO 255
     F(I) = RND * 0.25 + 0.15
     W(I) = WS / 500
 NEXT
-IF _FILEEXISTS("SPF.SND") THEN _SNDPLAYFILE "SPF.SND"
+IF _FILEEXISTS("SPF.SND") THEN SPF& = _SNDOPEN("SPF.SND"): _SNDLOOP SPF&
 DO
     'CLS 0, 0
     CW = CINT(RND * 15) + 5
@@ -31,8 +31,10 @@ DO
                     Y(I) = Y(I) + F(I)
                     X(I) = X(I) + W(I)
                     PSET (X(I), Y(I)), 15
-                    IF Y(I) > 137 AND Y(I) < 141 AND CINT(RND * 15) = 0 THEN
+                    IF Y(I) > 137 AND Y(I) < 141 AND CINT(RND * 31) = 0 THEN
+                        PSET (X(I), Y(I)), 0
                         PSET (X(I), 139), 15
+                        Y(I) = 401
                     END IF
                     IF Y(I) > 397 + CINT(RND * 3) THEN
                         'PSET (X(I), 399), 15
