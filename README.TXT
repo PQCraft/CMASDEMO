@@ -1,17 +1,18 @@
 This is a Christmas demo I made.
 
-Program:     DEMO.EXE
+Program:     DEMO.[ELF/EXE]
 Source Code: DEMO.BAS
 Music file:  SPF.SND
 Read me:     README.TXT (this file)
 
 Run DEMO.EXE to see the demo.
 
+Use [Alt + Enter] to change the fullscreen mode.
+use [Alt + F4] to close.
+
 The source code is in DEMO.BAS and needs to be compiled by QB64
 (QB64 1.4 was used to compile the included executable.)
 
 The audio file, SPF.SND, is an MS-DOS style Dance of the Sugar Plum Faries.
-
-The read me file is what you are reading right now.
 
 This program is open-source.
