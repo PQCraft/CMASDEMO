@@ -1,11 +1,10 @@
 This is a Christmas demo I made.
 
-Program:     DEMO.[ELF/EXE]
 Source Code: DEMO.BAS
 Music file:  SPF.SND
 Read me:     README.TXT (this file)
 
-Run DEMO.EXE to see the demo.
+Run DEMO.{ELF/EXE} to see the demo (compile or download).
 
 Use [Alt + Enter] to change the fullscreen mode.
 use [Alt + F4] to close.
